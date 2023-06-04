@@ -6,3 +6,11 @@ C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\obj\Debug\C#Refresh1.cs
 C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\obj\Debug\C#Refresh1.csproj.CoreCompileInputs.cache
 C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\obj\Debug\C#Refresh1.exe
 C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\obj\Debug\C#Refresh1.pdb
+C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\CS_Refresher\bin\Debug\C#Refresh1.exe.config
+C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\CS_Refresher\bin\Debug\C#Refresh1.exe
+C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\CS_Refresher\bin\Debug\C#Refresh1.pdb
+C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\CS_Refresher\obj\Debug\C#Refresh1.csproj.AssemblyReference.cache
+C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\CS_Refresher\obj\Debug\C#Refresh1.csproj.SuggestedBindingRedirects.cache
+C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\CS_Refresher\obj\Debug\C#Refresh1.csproj.CoreCompileInputs.cache
+C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\CS_Refresher\obj\Debug\C#Refresh1.exe
+C:\Users\edvar\Desktop\Code Stuff\C# Projects\C#Refresh1\CS_Refresher\obj\Debug\C#Refresh1.pdb

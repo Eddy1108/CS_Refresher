@@ -11,7 +11,7 @@ namespace C_Refresh1
         static void Main(string[] args)
         {
 
-                ///Working with strings
+                //Working with strings
 
             string characterName = "Neil";
             int characterAge = 83;
@@ -33,7 +33,7 @@ namespace C_Refresh1
             Console.ReadLine();
             Console.Clear();
 
-                ///Common variables
+                //Common variables
           
             //string phrase = "This is a string";
             //char grade = 'A';
@@ -46,7 +46,7 @@ namespace C_Refresh1
             //Console.ReadLine();
             //Console.Clear();
 
-                ///More string functionality
+                //More string functionality
 
             string text = "Testing \"Programming\" in C#";
             Console.WriteLine(text);
@@ -62,7 +62,7 @@ namespace C_Refresh1
             Console.ReadLine();
             Console.Clear();
 
-                ///Storing user input
+                //Storing user input
 
             Console.WriteLine("What is your name?");
             string userName = Console.ReadLine();
@@ -85,7 +85,7 @@ namespace C_Refresh1
             Console.ReadLine();
             Console.Clear();
 
-                ///MadLibs game
+                //MadLibs game
 
             string color, pluralNoun, celebrity;
             Console.WriteLine("Enter a Color: ");
@@ -103,7 +103,7 @@ namespace C_Refresh1
             Console.ReadLine();
             Console.Clear();
 
-                ///Arrays in C#
+                //Arrays in C#
 
             int[] luckyNumbers = { 7, 14, 21, 42 };
             Console.WriteLine(luckyNumbers[1]);
@@ -136,8 +136,112 @@ namespace C_Refresh1
             Console.ReadLine();
             Console.Clear();
 
+                //Methods
+                
+            SayHello();
+            TakeParameter("Frieza", 999);
+            Console.WriteLine(CubeNum(5));
 
+            Console.ReadLine();
+            Console.Clear();
 
+                //Calculator
+
+            Calculator();
+
+            Console.ReadLine();
+            Console.Clear();
+
+            //Switch
+
+            Console.WriteLine("Todays day number is 0, which is: ");
+            Console.WriteLine(GetDay(0));
+
+            Console.ReadLine();
+            Console.Clear();
+
+        }
+
+            // Methods / Functions
+        static void SayHello()
+        {
+            Console.WriteLine("Hello Everyone, How are you? Fine Thank you.");
+        }
+        static void TakeParameter(string name, int age)
+        {
+            Console.WriteLine($"Hello {name}, you are a cool {age} year old!");
+        }
+        static double CubeNum(double num)
+        {
+            return num * num * num;
+        }
+
+        static void Calculator()
+        {
+            Console.WriteLine("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter Operator: ");
+            string op = Console.ReadLine();
+
+            Console.WriteLine("Enter a number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+            if (op == "+")
+            {
+                Console.WriteLine(num1 + num2);
+            }
+            else if (op == "-")
+            {
+                Console.WriteLine(num1 - num2);
+            }
+            else if(op == "*")
+            {
+                Console.WriteLine(num1 * num2);
+            }
+            else if (op == "/")
+            {
+                Console.WriteLine(num1 / num2);
+            }
+            else
+            {
+                Console.WriteLine("ERROR: Invalid Operator");
+            }
+
+        }
+
+        static string GetDay(int dayNum)
+        {
+            string dayName = "";
+
+            switch (dayNum) {
+                case 0:
+                    dayName = "Monday";
+                    break;
+                case 1:
+                    dayName = "Tuesday";
+                    break;
+                case 2:
+                    dayName = "Wednesday";
+                    break;
+                case 3:
+                    dayName = "Thursday";
+                    break;
+                case 4:
+                    dayName = "Friday";
+                    break;
+                case 5:
+                    dayName = "Saturday";
+                    break;
+                case 6:
+                    dayName = "Sunday";
+                    break;
+                default:
+                    dayName = "INVALID NUM";
+                    break;
+            }
+
+            return dayName;
         }
     }
 }
