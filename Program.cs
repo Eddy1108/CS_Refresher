@@ -152,10 +152,67 @@ namespace C_Refresh1
             Console.ReadLine();
             Console.Clear();
 
-            //Switch
+                //Switch
 
             Console.WriteLine("Todays day number is 0, which is: ");
             Console.WriteLine(GetDay(0));
+
+            Console.ReadLine();
+            Console.Clear();
+
+                // Guessing Game
+
+            GuessingGame();
+
+            Console.ReadLine();
+            Console.Clear();
+
+                //2D Arrays
+            TwoDArrays();
+
+            Console.ReadLine();
+            Console.Clear();
+
+                //Exception Handling
+            ExceptionHandling();
+
+            Console.ReadLine();
+            Console.Clear();
+
+                //Classes
+
+            Book book1 = new Book("Elder Scrolls", "Some old guy", 9999);
+            //book1.mTitle = "Elder Scrolls";
+            //book1.mAuthor = "Some old guy";
+            //book1.mPages = 9999;
+            book1.Rating = "PG";
+
+            Console.WriteLine(book1.mTitle);
+            Console.WriteLine(book1.mAuthor);
+            Console.WriteLine(book1.mPages);
+
+            Book book2 = new Book("Lord of the Rings", "J.R.R Tolkien", 900);
+            //book2.mTitle = "Lord of the Rings";
+            //book2.mAuthor = "J.R.R Tolkien";
+            //book2.mPages = 1234;
+            book2.Rating = "Good"; //turns into NR
+
+            Console.WriteLine(book2.mTitle);
+            Console.WriteLine(book2.mAuthor);
+            Console.WriteLine(book2.mPages);
+
+            Console.WriteLine("Does Book1 have over 1000 pages?: " + book1.HasManyPages());
+            Console.WriteLine("Does Book2 have over 1000 pages?: " + book2.HasManyPages());
+
+            Console.WriteLine("How many books have been made?: " + Book.booksMade);
+
+
+            Console.ReadLine();
+            Console.Clear();
+
+            //Static Methods & Classes
+
+            UsefulMaths.SayHi("Arthur");
 
             Console.ReadLine();
             Console.Clear();
@@ -243,5 +300,83 @@ namespace C_Refresh1
 
             return dayName;
         }
+
+        static void GuessingGame()
+        {
+            string secretWord = "bingus";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+
+            do
+            {
+                if (guessCount < guessLimit)
+                {
+                    Console.WriteLine("Enter Guess: ");
+                    guess = Console.ReadLine();
+
+                    guessCount++;
+
+                }
+                else
+                { 
+                    outOfGuesses = true; 
+                }
+
+
+            } while (guess != secretWord && !outOfGuesses);
+
+            if (outOfGuesses)
+                Console.WriteLine("You lose!");
+            else
+                Console.WriteLine("You win!");
+        }
+
+        static void TwoDArrays()
+        {
+            int[,] numberGrid = {
+                {1, 2},
+                {3, 4},
+                {5, 6},
+            };
+
+            Console.WriteLine("2D Array, element (1,1): " + numberGrid[1, 1]);
+        }
+
+        static void ExceptionHandling()
+        {
+            try
+            {
+                Console.WriteLine("Write a Number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Write a Number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Ans: " + (num1 / num2));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("ERROR");
+                Console.WriteLine(e.Message);
+                throw;
+            }
+            //catch (DivideByZeroException e)
+            //{
+
+            //}
+            //catch (FormatException e)
+            //{
+
+            //}
+            finally
+            {
+                //will run code no matter what.
+            }
+
+
+        }
+    
+        
     }
 }
