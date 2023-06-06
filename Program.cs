@@ -210,9 +210,22 @@ namespace C_Refresh1
             Console.ReadLine();
             Console.Clear();
 
-            //Static Methods & Classes
+                //Static Methods & Classes
 
             UsefulMaths.SayHi("Arthur");
+
+            Console.ReadLine();
+            Console.Clear();
+
+            //Inheritance
+            Chef chef = new Chef();
+            chef.MakeChicken();
+
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeChicken();
+
+            chef.MakeSpecialDish();
+            italianChef.MakeSpecialDish();
 
             Console.ReadLine();
             Console.Clear();
